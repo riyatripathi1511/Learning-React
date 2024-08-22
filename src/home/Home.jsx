@@ -28,7 +28,10 @@ export default function Home() {
                         <ul className='list-group w-50 m-1' key={curCart.id}>
                             <li className='list-group-item'>UserId : {curCart.userId}</li>
                             <li className='list-group-item'>Date : {curCart.date.slice(0, 10)}</li>
-
+                            <li className='list-group-item'>Products:
+                                <p>ProductId: (curCart.products[0].productId)</p>
+                                <p>Quantity: (curCart.products[0].quantity)</p>
+                            </li>
                         </ul>
                     );
 

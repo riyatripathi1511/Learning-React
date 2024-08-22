@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 export default function ShoppingList() {
     const [myList, setmyList] = useState();
 
-    useEffect(() => {
+    useEffect(() => { // it supports useEffect and dependencies
         const getList = async () => {
             const fetchList = await axios.get("https://fakestoreapi.com/products")
 
